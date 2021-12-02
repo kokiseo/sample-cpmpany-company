@@ -1,0 +1,519 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* END Reset Css*/
+
+body {
+    color: #666;
+    font-size: 15px;
+    line-height: 2;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    box-sizing: border-box;
+    background: #eee url(https://template-party.com/template/tp_biz30/tp_biz30_blue/images/bg.png);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    background: white;
+    margin: 0 auto;
+}
+
+/* header */
+header h1 {
+    height: 100px;
+    border-top: 5px solid #0e36ca;
+    position: relative;
+}
+
+.h-img {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+.nav {
+    margin-bottom: 20px;
+}
+
+.nav ul {
+    list-style: none;
+    letter-spacing: -.4em;
+    box-sizing: border-box;
+}
+
+.nav ul li {
+    display: inline-block;
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+    border-right: 1px solid #d2d2d2;
+    width: calc(100%/6);
+    border-left: none;
+    letter-spacing: normal;
+    box-sizing: border-box;
+    position: relative;
+    height: 65px;
+    text-align: center;
+    transition: .3s;
+}
+
+.nav ul li a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: inherit;
+    border-left: 3px solid rgba(0,0,0,0);
+    width: 90%;
+    transition: .3s;
+}
+
+.nav ul li a:hover {
+    border-left: 3px solid #0e36ca;
+}
+
+.nav ul li a:hover .li-top {
+    color: #0e36ca;
+}
+
+.nav ul li:hover {
+    background-color: #E6EBFA;
+}
+
+.nav ul li a .li-top {
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.nav ul li a .li-end  {
+    font-size: 10px;
+    line-height: 16px;
+    color: #bababa;
+}
+
+#active{
+    color: #0E36CA;
+    background-color: #E6EBFA;
+}
+
+#active a {
+    border-left: 3px solid #0e36ca;
+}
+
+#active a .li-top {
+    color: #0e36ca;
+}
+
+/* main */
+.contents {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main {
+    width: 70%;
+    margin-bottom: 50px;
+}
+/* 会社概要 */
+h2 {
+    background-color: #0F3BDB;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 4px 40px;
+    position: relative;
+}
+
+h2::before {
+    content: "";
+    background-color: #879DED;
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    width: 3px;
+    height: 18px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #d2d2d2;
+}
+
+table th {
+    width: 30%;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 400;
+    padding: 10px;
+}
+
+table td {
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.table {
+    margin-bottom: 50pxs;
+}
+
+/* 当テンプレートについて */
+main h3 {
+    padding: 5px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    background: linear-gradient(white, #efefef);
+    margin-bottom: 10px;
+}
+
+main p {
+    margin: 0 20px 10px 20px;
+}
+
+main a {
+    color: inherit;
+    transition: .3s;
+}
+
+main a:hover {
+    color: #0F3BDB;
+    text-decoration: none;
+}
+
+main .red {
+    color: red;
+    font-weight: 700;
+}
+
+main .thin {
+    font-weight: 400;
+}
+
+main .bg {
+    background-color: #CCCCCC;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* aside */
+aside {
+    width: 25%;
+    margin-left: 5%;
+}
+
+.frame {
+    background-color: #F5F5F5;
+    border: 1px solid #d2d2d2;
+    margin-bottom: 20px;
+}
+
+.side-menu {
+    margin: 10px;
+}
+
+.side ul {
+    list-style: none;
+}
+
+.side h4 {
+    background-color: #eee;
+    border-top: 5px solid #0F3BDB;
+    border-bottom: 1px solid #d2d2d2;
+    vertical-align: middle;
+    padding: 15px 10px;
+}
+
+.side ul li a {
+    border-bottom: 1px solid #d2d2d2;
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+    display: block;
+    overflow: hidden;
+}
+
+.side ul li a:hover {
+    background-color: white;
+    color:#0F3BDB;
+    transition: .3s;
+}
+
+.side-menu-none {
+    margin-bottom: 20px;
+}
+
+.side img {
+    width: 20%;
+    margin: 5px;
+    float: left;
+}
+
+.side .s-li-top {
+    font-size: 11px;
+    line-height: 13px;
+    color: #0F3BDB;
+}
+
+.side .s-li-end {
+    font-size: 11px;
+    line-height: 13px;
+    color: inherit;
+}
+
+.side-end {
+    text-align: center;
+}
+
+.s-p-top {
+    font-weight: 700;
+}
+
+.s-p-end {
+    font-size: 11px;
+    line-height: 17px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    padding: 20px 0;
+    color: white;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    background-color: #0F3BDB;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* jquery */
+
+#page_top {
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+}
+#page_top a {
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 20px;
+}
+#page_top a:hover {
+    background-color: #666;
+    text-decoration: none;
+}
+
+/* スマホ */
+.h-button {
+    display: none;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin: 25px;
+    z-index: -10;
+    position: relative;
+}
+
+.h-button span,  .h-button span::before, .h-button span::after{
+    content: "";
+    width: 30px;
+    height: 5px;
+    background: black;
+    position: absolute;
+}
+
+.h-button span {
+    top: 22.5px;
+    left: 10px;
+}
+
+.h-button span::before {
+    bottom: 10px;
+}
+
+.h-button span::after {
+    bottom: -10px;
+}
+
+#checkbox {
+    display: none;
+}
+
+#sp-nav {
+    width: 100%;
+    background: black;
+    z-index: -100;
+    opacity: 0;
+    position: absolute;
+    top: 105px;
+    transition: 0.3s;
+}
+
+#sp-nav ul {
+    list-style: none;
+}
+
+#sp-nav ul li {
+    border-bottom: 1px white solid;
+}
+
+#sp-nav ul li  a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    padding: 15px 20px;
+}
+
+.sp-li-top {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sp-li-end {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#checkbox:checked ~ #sp-nav {
+    opacity: 0.8;
+    z-index: 100;
+}
+
+
+@media (max-width:780px) {
+    main {
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+        margin: 0 0;
+    }
+    .nav {
+        display: none;
+    }
+
+    .h-button {
+        z-index: 10;
+        display: block;
+    }
+}
+
